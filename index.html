@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonial Biodata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f9ff;
+        }
+        .print-section {
+            background-color: white;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            body {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="print-section bg-white shadow-lg rounded-lg p-8 mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">Marriage Biodata</h1>
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=128&ixid=MnwxfDB8MXxyYW5kb218MHx8YXZhdGFyfHx8fHx8MTcwMjE0NjY5NA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=128" 
+                         alt="Profile Photo" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <form id="biodataForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-700 mb-4">Personal Information</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                                <input type="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Height</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" placeholder="e.g., 5'8''" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Religion</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-700 mb-4">Professional Details</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Education</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Occupation</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Annual Income</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Work Location</label>
+                                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-xl font-semibold text-gray-700">Family Background</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Father's Name & Occupation</label>
+                            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Mother's Name & Occupation</label>
+                            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Siblings</label>
+                        <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" rows="2" required></textarea>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-xl font-semibold text-gray-700">Contact Information</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Current Address</label>
+                        <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border" rows="2" required></textarea>
+                    </div>
+                </div>
+
+                <div class="flex justify-center space-x-4 no-print">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+                        Save
+                    </button>
+                    <button type="button" onclick="window.print()" class="bg-gray-600 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition duration-300">
+                        Print
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('biodataForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Biodata saved successfully!');
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
